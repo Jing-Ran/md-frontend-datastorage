@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.color-block {
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  text-align: center;
+  /*background-color: yellow;*/
+}
+
+.color-block--1 {
+  background-color: yellow;
+}
+
+.btn {
+  display: block;
+  padding: 1em 2em;
+  margin-top: 1em;
+  margin-left: 1.5em;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.btn--blue {
+  background-color: lightblue;
+}
+
+.btn--pink {
+  background-color: lightpink;
+}
+
+.btn--reset {
+  background-color: yellow;
+}
