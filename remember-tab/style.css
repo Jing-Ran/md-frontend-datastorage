@@ -1,0 +1,164 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tabComponent {
+  width: 800px;
+  min-height: 150px;
+  border: 1px solid lightgray;
+  background-color: #fff;
+}
+
+.tabComponent input {
+  display: none;
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: bold;
+  color: rgba(0,0,0,0.45);
+}
+
+.tabs-lg-screen {
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+.tabs-sm-screen {
+  display: none;
+}
+
+.tabs label {
+  padding: 25px 0 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  cursor: pointer;
+
+  -webkit-transition: color 0.3s, border-bottom-color 0.3s;
+  -moz-transition: color 0.3s, border-bottom-color 0.3s;
+  -o-transition: color 0.3s, border-bottom-color 0.3s;
+  transition: color 0.3s, border-bottom-color 0.3s;
+
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+
+.tabs label:hover {
+  color: rgba(38,198,218,0.6);
+  border-bottom-color: rgba(38,198,218,0.5);
+}
+
+.tabs-lg-screen label {
+  border-bottom: 2px solid transparent;
+  flex: 1;
+}
+
+
+.tab-content {
+  margin: 0 15px 15px;
+  padding: 15px 20px 0;
+  display: none;
+  max-height: 200px;
+  height: 100px;
+  color: rgba(0,0,0,0.7);
+  background-color: rgba(38,198,218,0.2);
+}
+
+.tabComponent input:nth-of-type(1):checked ~ .tabs-lg-screen label:nth-of-type(1),
+.tabComponent input:nth-of-type(2):checked ~ .tabs-lg-screen label:nth-of-type(2),
+.tabComponent input:nth-of-type(3):checked ~ .tabs-lg-screen label:nth-of-type(3),
+.tabComponent input:nth-of-type(4):checked ~ .tabs-lg-screen label:nth-of-type(4) {
+  border-bottom-color: #26C6DA;
+  color: #26C6DA;
+}
+
+.tabComponent input:nth-of-type(1):checked ~ .tab-content-decor,
+.tabComponent input:nth-of-type(2):checked ~ .tab-content-furniture,
+.tabComponent input:nth-of-type(3):checked ~ .tab-content-kitchen,
+.tabComponent input:nth-of-type(4):checked ~ .tab-content-clearance {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .tabComponent {
+    width: 80%;
+    max-width: 800px;
+  }
+}
+
+/* Using iPad-portrait breakpoint fits better in this case */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.85em;
+  }
+
+  .tabComponent {
+    width: 100%;
+  }
+
+  .tabs-lg-screen {
+    display: none;
+  }
+
+  .tabs-sm-screen {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .tabs-sm-screen label {
+    padding: 20px 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+    color: inherit;
+  }
+
+  .tab-content {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    max-height: 0;
+    overflow-y: hidden;
+
+    -webkit-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -ms-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    -o-transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+    transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+  }
+
+  .tabComponent input:nth-of-type(1):checked ~ .tabs-sm-screen-decor label,
+  .tabComponent input:nth-of-type(2):checked ~ .tabs-sm-screen-furniture label,
+  .tabComponent input:nth-of-type(3):checked ~ .tabs-sm-screen-kitchen label,
+  .tabComponent input:nth-of-type(4):checked ~ .tabs-sm-screen-clearance label {
+    color: #26C6DA;
+    border-bottom-color: #26C6DA;
+    -webkit-box-shadow: 0 3px 5px -1px #9E9E9E;
+    -moz-box-shadow: 0 3px 5px -1px #9E9E9E;
+    box-shadow: 0 3px 5px -1px #9E9E9E;
+  }
+
+  .tabComponent input:nth-of-type(1):checked ~ .tab-content-decor,
+  .tabComponent input:nth-of-type(2):checked ~ .tab-content-furniture,
+  .tabComponent input:nth-of-type(3):checked ~ .tab-content-kitchen,
+  .tabComponent input:nth-of-type(4):checked ~ .tab-content-clearance {
+    max-height: 200px;
+    padding: 20px;
+  }
+}
+

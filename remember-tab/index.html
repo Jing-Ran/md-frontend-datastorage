@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mastering CSS: Tabs Component">
+  <title>Project Assignment: Tabs Component</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+</head>
+<body>
+  <div class="tabComponent">
+    <!-- Insert code to create tabbed components here -->
+    <input type="radio" name="tabs" value="home-decor" id="homeDecor" checked>
+    <input type="radio" name="tabs" value="furniture" id="furniture">
+    <input type="radio" name="tabs" value="kitchen" id="kitchen">
+    <input type="radio" name="tabs" value="clearance" id="clearance">
+
+    <div class="tabs tabs-lg-screen">
+      <label for="homeDecor">Home Decor</label>
+      <label for="furniture">Furniture</label>
+      <label for="kitchen">Kitchen</label>
+      <label for="clearance">Clearance</label>
+    </div>
+
+    <div class="tabs tabs-sm-screen tabs-sm-screen-decor">
+      <label for="homeDecor">Home Decor</label>
+    </div>
+    <div class="tab-content tab-content-decor">
+      <p>Browse through our list of Home Decor Items</p>
+    </div>
+
+    <div class="tabs tabs-sm-screen tabs-sm-screen-furniture">
+      <label for="furniture">Furniture</label>
+    </div>
+    <div class="tab-content tab-content-furniture">
+      <p>Flash Sale on Living Room and Bedroom Furniture</p>
+    </div>
+
+    <div class="tabs tabs-sm-screen tabs-sm-screen-kitchen">
+      <label for="kitchen">Kitchen</label>
+    </div>
+    <div class="tab-content tab-content-kitchen">
+      <p>Bring the best out of the masterchef in you!!</p>
+    </div>
+
+    <div class="tabs tabs-sm-screen tabs-sm-screen-clearance">
+      <label for="clearance">Clearance</label>
+    </div>
+    <div class="tab-content tab-content-clearance">
+      <p>Red hot deals at affordable prices. Check out our clearance section for more details.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
