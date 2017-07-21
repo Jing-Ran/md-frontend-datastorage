@@ -11,7 +11,7 @@
     localStorage.setItem('checkedInput', input.id);
   }
 
-  if (localStorage.length <= 0) {
+  if (!localStorage.getItem('checkedInput')) {
     localStorage.setItem('checkedInput', allInputs[0].id);
   } else {
     document.getElementById(localStorage.getItem('checkedInput')).checked =
