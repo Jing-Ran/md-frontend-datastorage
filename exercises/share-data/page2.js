@@ -9,5 +9,5 @@
 
   window.addEventListener('storage', function (e) {
     colorBlock2.style.backgroundColor = e.newValue;
-  })
+  });
 })();
