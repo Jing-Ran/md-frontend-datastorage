@@ -22,7 +22,7 @@
   }
 
   // page 1 loaded
-  if (localStorage.length <= 0) {
+  if (!localStorage.getItem('bgColor')) {
     localStorage.setItem('bgColor', defaultColor);
   } else {
     changeBgColor(localStorage.getItem('bgColor'));
