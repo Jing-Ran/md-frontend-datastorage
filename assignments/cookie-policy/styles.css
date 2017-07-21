@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  width: 100%;
+}
+
+.c-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #e0e0e0;
+
+  transition: all 0.3s;
+  transform: translateY(-100%);
+}
+
+.c-modal__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.c-modal__body {
+  width: 100%;
+  margin: 0;
+  padding-top: 1.3em;
+  padding-bottom: 0.8em;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.c-modal__footer {
+  width: 100%;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-btn {
+  font-size: 0.6em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  width: 8em;
+  border: 1px solid black;
+
+}
+
+.c-btn--disagree {
+  background-color: lightgray;
+  color: black;
+  margin-right: 10em;
+}
+
+.c-btn--agree {
+  background-color: black;
+  color: white;
+}
+
+.c-modal.modal-show {
+  transform: translateY(0);
+}
+
+p {
+  margin: 200px auto;
+  width: 60%;
+}
