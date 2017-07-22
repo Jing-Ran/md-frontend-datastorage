@@ -3,8 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <title>LocalStorage Assignment</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <div class="container">
+    <aside class="settings">
+      <h2>Settings</h2>
+      <div class="settingItem settings__bg-color">
+        Background color:
+        <label class="bg-color--blue">
+          <input type="radio" value="lightblue" name="bgColor" class="default"> Blue
+        </label>
+        <label class="bg-color--pink">
+          <input type="radio" value="pink" name="bgColor"> Pink
+        </label>
+      </div>
 
+      <div class="settingItem settings__font-size">
+        Font size:
+        <label class="font-size--s">
+          <input type="radio" value="12px" name="fontSize"> A
+        </label>
+        <label class="font-size--m">
+          <input type="radio" value="18px" name="fontSize" class="default"> A
+        </label>
+        <label class="font-size--l">
+          <input type="radio" value="24px" name="fontSize"> A
+        </label>
+      </div>
+
+      <div class="settingItem settings__greeting">
+        Greeting:
+        <label class="greeting--default">
+          <input class="greeting-input default" type="radio" value="Aloha" name="greeting"> Default
+        </label>
+        <label class="greeting--customized">
+          <input class="greeting-input" type="radio" value="" name="greeting" data-greeting="customized"> Customized
+          <input type="text" maxlength="80" placeholder="No more than 80 characters" class="greeting-input--txt" >
+        </label>
+      </div>
+
+      <button type="button" class="update-btn">Update</button>
+    </aside>
+
+    <section class="main">
+      <div class="greeting"></div>
+      <h1>Lorem Ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat diam in lobortis accumsan. Nulla convallis erat non porttitor dignissim. Vestibulum rutrum lobortis odio vitae ultricies. Suspendisse potenti. Fusce bibendum maximus purus quis scelerisque. Morbi nec tortor pellentesque, hendrerit leo a, accumsan lorem. Suspendisse sed porta tellus. Integer a massa eu libero cursus tristique id sit amet sem. Cras pretium urna non diam vehicula elementum. Nulla in posuere felis, et pretium velit. Nam in dui fringilla, dapibus magna non, imperdiet mauris. Cras sit amet lorem varius, tristique nulla ut, porttitor quam. Sed turpis nunc, scelerisque ut neque id, posuere sagittis sem. In at dolor tempus metus porttitor hendrerit. Nullam eu sagittis augue.</p>
+      <p>Curabitur et venenatis sapien, feugiat accumsan urna. Aliquam mattis risus in vestibulum maximus. In eget magna elit. Suspendisse placerat urna sed metus fermentum pellentesque. Duis efficitur ex lacinia bibendum congue. Sed sem nulla, pharetra vitae lorem eu, gravida laoreet massa. Sed fringilla id purus at auctor. Nullam fringilla nisi lacus, in pretium diam molestie gravida. Integer vel felis ac ligula pretium rutrum. Nulla facilisi. Integer viverra nulla vel viverra pellentesque.</p>
+      <p>Integer lacinia augue dolor, ut mollis elit volutpat a. Vivamus vel commodo tortor, id dignissim arcu. Phasellus volutpat, nibh sed sagittis semper, dui metus ornare ante, eu ullamcorper magna nisl quis purus. Suspendisse lorem lorem, ultricies sed semper in, scelerisque ut ipsum. Curabitur sagittis eget sem at mattis. Vestibulum tincidunt sit amet velit et interdum. Sed nec hendrerit quam. Donec consequat lacinia pulvinar.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

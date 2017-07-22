@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-size: 16px;
+}
+
+.container {
+  width: 75%;
+  margin: 2em auto;
+
+  border: 1px solid black;
+}
+
+.settings {
+  width: 20%;
+  float: right;
+
+  border: 1px solid green;
+}
+
+.main {
+  width: 75%;
+  padding: 1.5em;
+  /*background-color: lightblue;*/
+
+  border: 1px solid red;
+}
+
+/* Aside */
+.settings div {
+  margin: 1em 0;
+}
+
+.settings label {
+  display: block;
+  margin-top: 5px;
+}
+
+.font-size--s {
+  font-size: 12px;
+}
+
+.font-size--m {
+  font-size: 18px;
+}
+
+.font-size--l {
+  font-size: 24px;
+}
+
+.greeting-input--txt {
+  width: 100%;
+  display: block;
+  margin-top: 0.5em;
+  padding: 0.2em;
+  font-size: 0.8em;
+}
+
+/* Main section */
+.greeting {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.main p {
+  /*font-size: 18px;*/
+}
+
+.update-btn {
+  display: block;
+  margin: 1.5em auto;
+  padding: 0.5em 1em;
+  font-size: 0.8em;
+  background-color: white;
+  border: 2px solid lightgray;
+}
