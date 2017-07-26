@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+li input {
+  display: inline-block;
+  padding: 0.3em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid gray;
+  padding: 0.4em 0.8em;
+}
+
+.btn--delete {
+  margin-left: 0.3em;
+}
+
+.btn--update {
+  margin-left: 0.8em;
+}
+
