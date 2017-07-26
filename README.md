@@ -6,6 +6,8 @@
 	
 	* [Exercises 2-5: Remember the previously selected tab](exercises/remember-tab/)
 	
+	* [Exercises 3: IndexedDB - Friends List](exercises/indexeddb/)
+	
 2. Assignments
 
 	* [Cookie Policy](assignments/cookie-policy/)
